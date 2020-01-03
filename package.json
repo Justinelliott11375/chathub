@@ -11,6 +11,9 @@
   "devDependencies": {
     "nodemon": "^2.0.2"
   },
+  "engines": {
+    "node": "9.6.1"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
