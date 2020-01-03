@@ -34,12 +34,21 @@ import React, {
     createMessage(e) {
       console.log('createMessage fired');
       e.preventDefault();
-      this.messageRef.push({
-        content: this.state.content,
-        username: this.state.username,
-        sentAt: this.state.sentAt,
-        roomId: this.state.roomId.key
-      });
+      if(this.state.username === undefined) {
+        this.messageRef.push({
+          content: this.state.content,
+          username: "Guest",
+          sentAt: this.state.sentAt,
+          roomId: this.state.roomId.key
+        });
+      } else {
+        this.messageRef.push({
+          content: this.state.content,
+          username: this.state.username,
+          sentAt: this.state.sentAt,
+          roomId: this.state.roomId.key
+        });
+      }
       this.setState({
         content: "",
         username: "",
@@ -84,4 +93,4 @@ import React, {
       );
     }
   };
-  export default MessageList;
+  export default MessageList; 

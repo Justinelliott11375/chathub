@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './../App.css'
+import Button from 'react-bootstrap/Button';
 
 class RoomList extends Component {
   constructor(props) {
@@ -61,7 +62,7 @@ class RoomList extends Component {
         </div>
           )
         }
-        <button onClick={() => this.deleteRoom(this.props.activeRoom.key, this.props.activeRoom.name)}>Delete active room</button>
+        <Button variant="primary" onClick={() => this.deleteRoom(this.props.activeRoom.key, this.props.activeRoom.name)}>Delete active room</Button>
         <form onSubmit={ (e) => this.createRoom(e)}>
           <p>Create new room:</p>
           <input type="text" value={this.state.newRoomName} onChange={ (e) => this.handleChange(e) } />

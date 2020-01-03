@@ -1,5 +1,11 @@
 .App {
   text-align: center;
+
+}
+
+body {
+  background-color: darkcyan;
+  height: 100vh;
 }
 
 .App-logo {
@@ -19,6 +25,28 @@
 }
 
 @keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.activeMessageList {
+  display: inline-block;
+  height: 70%;
+  width: 60%;
+  background-color: aqua
+}
+
+.activeRoom {
+  background-color: blueviolet;
+}
+
+.roomList {
+  float: right;
+  width: 40%;
+  background-color: chartreuse;
 }
