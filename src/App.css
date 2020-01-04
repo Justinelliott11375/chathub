@@ -1,3 +1,10 @@
+html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
 .App {
   text-align: center;
 
@@ -36,7 +43,7 @@ body {
 
 .activeMessageList {
   display: inline-block;
-  height: 70%;
+  height: 60%;
   width: 60%;
   background-color: aqua
 }
@@ -48,7 +55,15 @@ body {
 .roomList {
   float: left;
   width: 40%;
+  height: 80vh;
   background-color: chartreuse;
+}
+
+#roomContainer {
+  overflow: auto;
+  height: 58%;
+  padding-bottom: 1em;
+  padding-top: 1em;
 }
 
 #roomsClickable {
@@ -61,4 +76,16 @@ body {
 #roomsClickable:hover {
   cursor: pointer;
   text-decoration: underline;
+}
+
+#createRoom {
+  background-color: yellow;
+  position: absolute;
+  bottom: 0;
+  height: 20vh;
+  width: inherit;
+}
+
+#create-room-p {
+  margin: 0;
 }
