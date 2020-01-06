@@ -19,14 +19,7 @@ import * as firebase from 'firebase';
     measurementId: "G-J4W4NLV7W3"
   };
   firebase.initializeApp(firebaseConfig);
-  
-  window.addEventListener("load",function() {
-    // Set a timeout...
-    setTimeout(function(){
-      // Hide the address bar!
-      window.scrollTo(0, 1);
-    }, 0);
-  });
+
 
 class App extends Component {
   constructor(props) {
@@ -41,6 +34,7 @@ class App extends Component {
   setActiveRoom(room) {
     this.setState({activeRoom: room}, () => console.log("Active room:", this.state.activeRoom));
   }
+
 
   setUser(user) {
     this.setState({activeUser: user});

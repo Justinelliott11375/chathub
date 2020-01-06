@@ -86,7 +86,7 @@ import React, {
           <form id="messageBar" onSubmit={this.createMessage}>
             <input id="messageField" type="text" value={this.state.content} onChange={this.handleChange}>
             </input>
-            <input type="submit" value="Send">
+            <input class="buttons" type="submit" value="Send">
             </input>
           </form>
         </section>

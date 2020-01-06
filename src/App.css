@@ -42,26 +42,58 @@ body {
 }
 
 .activeMessageList {
-  display: inline-block;
-  height: 60%;
+  border-radius: 0 15px 15px 0;
+  float: right;
+  margin-right: 5%;
   width: 60%;
-  background-color: aqua
+  height: 91vh;
+  overflow: auto;
+  background-color: #a8d0e6;
+  text-align: left;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.messageListText {
+  background-color: tomato;
+  position: absolute;
+  top: 0;
+}
+
+#messageBar {
+  padding: 10px;
+}
+
+#messageField {
+  width: 80%;
+}
+
+.buttons {
+  margin-left: 5px;
 }
 
 .activeRoom {
+  border-radius: 15px 0 0 0;
+  height: 5%;
   background-color: blueviolet;
 }
 
 .roomList {
   float: left;
-  width: 40%;
-  height: 80vh;
+  width: 30%;
+  height: 91vh;
+  margin-left: 5%;
   background-color: chartreuse;
+  border-radius: 15px 0 0 15px;
+  position: relative;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
 }
 
 #roomContainer {
   overflow: auto;
-  height: 58%;
+  height: 80%;
   padding-bottom: 1em;
   padding-top: 1em;
 }
@@ -82,10 +114,15 @@ body {
   background-color: yellow;
   position: absolute;
   bottom: 0;
-  height: 20vh;
-  width: inherit;
+  height: 15%;
+  width: 100%;
+  border-radius: 0 0 0 15px;
 }
 
 #create-room-p {
   margin: 0;
+}
+
+.userName {
+  padding: 5px;
 }
